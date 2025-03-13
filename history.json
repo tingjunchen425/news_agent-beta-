@@ -1,0 +1,68 @@
+[
+    {
+        "role": "model",
+        "parts": [
+            "\"international news last 24 hours site:cnn.com OR site:bbc.com OR site:dw.com OR site:aljazeera.com\""
+        ]
+    },
+    {
+        "role": "user",
+        "parts": [
+            "['search result:[\"Title: \\'Things are going south for women\\': Sexual harassment lawyer on the rise of misogyny and the Tate brothers - CNN\\\\nScore: 0.17792544\"]']"
+        ]
+    },
+    {
+        "role": "model",
+        "parts": [
+            "```\ninternational news from CNN, BBC, DW, and Al Jazeera in the past 24 hours, text-only\n```"
+        ]
+    },
+    {
+        "role": "user",
+        "parts": [
+            "[\"search result:['Title: Woman trapped in car films as tornado hits Central Florida - BBC.com\\\\nScore: 0.2720667']\"]"
+        ]
+    },
+    {
+        "role": "model",
+        "parts": [
+            "\"international news CNN BBC DW Al Jazeera past 24 hours\""
+        ]
+    },
+    {
+        "role": "user",
+        "parts": [
+            "[\"search result:['Title: Watch: Aerial video shows extent of damage to North Sea oil tanker - BBC.com\\\\nScore: 0.23981234']\"]"
+        ]
+    },
+    {
+        "role": "model",
+        "parts": [
+            "```\ninternational news from CNN, BBC, DW, and Al Jazeera in the last 24 hours text only\n```"
+        ]
+    },
+    {
+        "role": "user",
+        "parts": [
+            "[\"search result:['Title: Watch: Aerial video shows extent of damage to North Sea oil tanker - BBC.com\\\\nScore: 0.22149417']\"]"
+        ]
+    },
+    {
+        "role": "model",
+        "parts": [
+            "```\ninternational news (CNN OR BBC OR DW OR Al Jazeera) within the last 24 hours text-only\n```"
+        ]
+    },
+    {
+        "role": "user",
+        "parts": [
+            "[\"search result:['Title: Watch: Aerial video shows extent of damage to North Sea oil tanker - BBC.com\\\\nScore: 0.25782856']\"]"
+        ]
+    },
+    {
+        "role": "model",
+        "parts": [
+            "\"international news\" (site:cnn.com OR site:bbc.co.uk OR site:dw.com OR site:aljazeera.com) \"past 24 hours\" -video"
+        ]
+    }
+]
