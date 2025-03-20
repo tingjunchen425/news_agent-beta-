@@ -10,7 +10,9 @@ class Writer:
     def __init__(self):
         self.model = generativeai.GenerativeModel(
             model_name="gemini-2.0-pro-exp-02-05",
-            system_instruction="You are a news agent. You should convert the news content to a readable format.Use zh-TW as the target language.Use markdown format.The end of the news content should be marked with '\n'."
+            system_instruction="""You are a news agent. You should convert the news content to a readable format.Use zh-TW as the target language.Use markdown format.
+            If there is news on the same topic, merge them into one.
+            The end of the news content should be marked with '\n'."""
         )
         self.thinking = generativeai.GenerativeModel(
             model_name="gemini-2.0-flash-thinking-exp-01-21",

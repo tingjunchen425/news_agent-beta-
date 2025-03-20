@@ -28,7 +28,7 @@ class news_agent:
         with open("./txt/news.txt", "a", encoding="utf-8") as f:
             f.write("")
         
-        for i in range(1, 6):
+        for i in range(1, 4):
             self.response = client.search(self.query, **self.params)
             result = self.response["results"]
             self.search_result = []
